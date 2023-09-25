@@ -11,23 +11,10 @@ namespace Ocelot.Tests
         [SetUp]
         public void Setup()
         {
-        //     // Load the Ocelot.json file for testing (replace with your actual file path)
-        //     ///home/coder/project/workspace/dotnetproject/dotnetapigateway/Ocelot.json
-        // string jsonFilePath = "/home/coder/workspace/dotnetproject/dotnetapigateway/Ocelot.json";
-        //     string jsonText = System.IO.File.ReadAllText(jsonFilePath);
-        //     ocelotJson = JObject.Parse(jsonText);
-string jsonFilePath = "/home/coder/workspace/dotnetproject/dotnetapigateway/Ocelot.json";
-
-if (System.IO.File.Exists(jsonFilePath))
-{
-    string jsonText = System.IO.File.ReadAllText(jsonFilePath);
-   ocelotJson = JObject.Parse(jsonText);
-}
-else
-{
-    Console.WriteLine("The file does not exist at the specified path.");
-}
-
+            // Load the Ocelot.json file for testing (replace with your actual file path)
+            string jsonFilePath = @"home\coder\workspace\dotnetproject\dotnetapigateway\Ocelot.json";
+            string jsonText = System.IO.File.ReadAllText(jsonFilePath);
+            ocelotJson = JObject.Parse(jsonText);
         }
 
        [Test]
