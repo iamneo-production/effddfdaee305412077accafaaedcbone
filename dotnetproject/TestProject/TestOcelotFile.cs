@@ -24,9 +24,9 @@ namespace Ocelot.Tests
 
             Assert.That(FlightRoute, Is.Not.Null);
             Assert.That(FlightRoute["DownstreamPathTemplate"].Value<string>(), Is.EqualTo("/api/Flight"));
-            Assert.That(FlightRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("https"));
+            Assert.That(FlightRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("http"));
             Assert.That(FlightRoute["DownstreamHostAndPorts"][0]["Host"].Value<string>(), Is.EqualTo("localhost"));
-            Assert.That(FlightRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(7214));
+            Assert.That(FlightRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(8080));
         }
 
         [Test]
@@ -36,9 +36,9 @@ namespace Ocelot.Tests
 
             Assert.That(AirportRoute, Is.Not.Null);
             Assert.That(AirportRoute["DownstreamPathTemplate"].Value<string>(), Is.EqualTo("/api/Flight/{id}"));
-            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("https"));
+            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("http"));
             Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Host"].Value<string>(), Is.EqualTo("localhost"));
-            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(7214));
+            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(8080));
         }
 [Test]
         public void VerifyAirportRoute()
@@ -47,9 +47,9 @@ namespace Ocelot.Tests
 
             Assert.That(AirportRoute, Is.Not.Null);
             Assert.That(AirportRoute["DownstreamPathTemplate"].Value<string>(), Is.EqualTo("/api/Airport"));
-            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("https"));
+            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("http"));
             Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Host"].Value<string>(), Is.EqualTo("localhost"));
-            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(6200));
+            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(8081));
         }
                 [Test]
         public void VerifyAirportNamesRoute()
@@ -58,9 +58,9 @@ namespace Ocelot.Tests
 
             Assert.That(AirportRoute, Is.Not.Null);
             Assert.That(AirportRoute["DownstreamPathTemplate"].Value<string>(), Is.EqualTo("/api/Airport/AirportNames"));
-            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("https"));
+            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("http"));
             Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Host"].Value<string>(), Is.EqualTo("localhost"));
-            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(6200));
+            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(8081));
         }
         [Test]
         public void VerifyAirportIDRoute()
@@ -69,9 +69,9 @@ namespace Ocelot.Tests
 
             Assert.That(AirportRoute, Is.Not.Null);
             Assert.That(AirportRoute["DownstreamPathTemplate"].Value<string>(), Is.EqualTo("/api/Airport/{id}"));
-            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("https"));
+            Assert.That(AirportRoute["DownstreamScheme"].Value<string>(), Is.EqualTo("http"));
             Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Host"].Value<string>(), Is.EqualTo("localhost"));
-            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(6200));
+            Assert.That(AirportRoute["DownstreamHostAndPorts"][0]["Port"].Value<int>(), Is.EqualTo(8081));
         }
         [Test]
         public void VerifyFlightRouteUpstreamPath()

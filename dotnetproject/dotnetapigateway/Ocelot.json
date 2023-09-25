@@ -16,11 +16,11 @@
         },
         {
             "DownstreamPathTemplate": "/api/Flight/{id}",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 7214
+                    "Port": 8080
                 }
             ],
             "UpstreamPathTemplate": "/gateway/Flight/{id}",
@@ -30,11 +30,11 @@
         },
         {
             "DownstreamPathTemplate": "/api/Airport",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 6200
+                    "Port": 8081
                 }
             ],
             "UpstreamPathTemplate": "/gateway/Airport",
@@ -44,11 +44,11 @@
         },
         {
             "DownstreamPathTemplate": "/api/Airport/AirportNames",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 6200
+                    "Port": 8081
                 }
             ],
             "UpstreamPathTemplate": "/gateway/Airport/AirportNames",
@@ -58,11 +58,11 @@
         },
         {
             "DownstreamPathTemplate": "/api/Airport/{id}",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 6200
+                    "Port": 8081
                 }
             ],
             "UpstreamPathTemplate": "/gateway/Airport/{id}",
