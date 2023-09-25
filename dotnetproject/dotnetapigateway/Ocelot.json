@@ -6,7 +6,7 @@
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
-                    "Port": 7214
+                    "Port": 8080
                 }
             ],
             "UpstreamPathTemplate": "/gateway/Flight",
