@@ -12,7 +12,7 @@ namespace Ocelot.Tests
         public void Setup()
         {
             // Load the Ocelot.json file for testing (replace with your actual file path)
-            string jsonFilePath = @"home\coder\workspace\dotnetproject\dotnetapigateway\Ocelot.json";
+            string jsonFilePath = @"/home/coder/project/workspace/dotnetproject/dotnetapigateway/Ocelot.json";
             string jsonText = System.IO.File.ReadAllText(jsonFilePath);
             ocelotJson = JObject.Parse(jsonText);
         }
