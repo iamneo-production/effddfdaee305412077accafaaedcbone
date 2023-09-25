@@ -1,0 +1,74 @@
+{
+    "Routes": [
+        {
+            "DownstreamPathTemplate": "/api/Flight",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7214
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Flight",
+            "UpstreamHttpMethod": ["POST", "GET"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
+        },
+        {
+            "DownstreamPathTemplate": "/api/Flight/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 7214
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Flight/{id}",
+            "UpstreamHttpMethod": ["DELETE", "GET"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
+        },
+        {
+            "DownstreamPathTemplate": "/api/Airport",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 6200
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Airport",
+            "UpstreamHttpMethod": ["POST", "GET"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
+        },
+        {
+            "DownstreamPathTemplate": "/api/Airport/AirportNames",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 6200
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Airport/AirportNames",
+            "UpstreamHttpMethod": ["GET"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
+        },
+        {
+            "DownstreamPathTemplate": "/api/Airport/{id}",
+            "DownstreamScheme": "https",
+            "DownstreamHostAndPorts": [
+                {
+                    "Host": "localhost",
+                    "Port": 6200
+                }
+            ],
+            "UpstreamPathTemplate": "/gateway/Airport/{id}",
+            "UpstreamHttpMethod": ["DELETE"],
+            "DownstreamHttpVersion": "2.0",
+            "DangerousAcceptAnyServerCertificate": false
+        }
+    ]
+}
