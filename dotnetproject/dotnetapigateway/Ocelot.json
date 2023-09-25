@@ -2,7 +2,7 @@
     "Routes": [
         {
             "DownstreamPathTemplate": "/api/Flight",
-            "DownstreamScheme": "https",
+            "DownstreamScheme": "http",
             "DownstreamHostAndPorts": [
                 {
                     "Host": "localhost",
